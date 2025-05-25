@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import {
   Home, List, Folder, Users, BarChart,
-  HelpCircle, MapPin, Settings, BookUser
+  HelpCircle, MapPin, Settings, BookUser, 
+  Clipboard
 } from "lucide-react";
 
 const perkuliahan = [
@@ -20,6 +21,7 @@ const lainnya = [
 
 const dataMaster = [
   { label: "Mahasiswa", icon: BookUser, path: "/mahasiswa" },
+  { label: "Mata Kuliah", icon: Clipboard, path: "/mata-kuliah" },
 ];
 
 function renderMenu(menu: typeof perkuliahan) {
